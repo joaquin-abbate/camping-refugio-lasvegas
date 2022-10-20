@@ -156,6 +156,59 @@ header a img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-titulo-boton-hero {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+.container-principal .container-titulo-boton-hero .titulo-header {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+button {
+  width: 150px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 8px 2px #425156;
+  background-color: transparent;
+  border-radius: 28px;
+  border: 1px solid #83e1e4;
+  display: inline-block;
+  cursor: pointer;
+  color: aliceblue;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 16px 31px;
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+button a {
+  text-transform: uppercase;
+  color: #e0e5e9;
+}
+button:hover {
+  background-color: transparent;
+}
+button:active {
+  position: relative;
+  top: 1px;
 }
 
 /* !MAIN INDEX- PARTE-SECUNDARIA*/
@@ -168,6 +221,7 @@ header a img {
   background-color: #e0e5e9;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 15% auto;
+  padding: 0 1.75rem;
 }
 
 .areas {
@@ -296,9 +350,10 @@ header a img {
 }
 
 .item-3:hover {
-  transform: scale(1.1);
+  font-size: 32px;
   transition: 1s;
   color: #9933ff;
+  transform: scale(1.1);
 }
 
 .item-3:hover i {
@@ -669,23 +724,149 @@ nav .nav-list {
 .main-servicios {
   grid-row: 2/3;
   display: grid;
-  grid-template-rows: calc(100vh - 75px) 100vh;
+  grid-template-rows: 65vh 90vh;
   margin: 25px;
   background-color: aliceblue;
 }
 
 .info-sobre-servicios {
   grid-row: 1/2;
-  background-color: #7fe4e3;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .info-sobre-servicios i {
   font-size: 2rem;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  color: #425156;
+}
+
+.f-card h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  color: aliceblue;
+}
+
+.f-card-1 {
+  border-radius: 3%;
+  flex-direction: column-reverse;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.f-card-1 div {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.f-card-1 .card-front {
+  background-color: #83e0e4;
+  transform: perspective(500px) rotateY(0deg);
+  border-radius: 3%;
+}
+
+.f-card-1 .card-back {
+  background-color: #9dca37;
+  transform: perspective(500px) rotateY(180deg);
+  border-radius: 3%;
+}
+
+.f-card-1:hover .card-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.f-card-1:hover .card-back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.f-card-2 {
+  border-radius: 3%;
+  flex-direction: column-reverse;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.f-card-2 div {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.f-card-2 .card-front {
+  background-color: #83e0e4;
+  transform: perspective(500px) rotateY(0deg);
+  border-radius: 3%;
+}
+
+.f-card-2 .card-back {
+  background-color: #9dca37;
+  transform: perspective(500px) rotateY(180deg);
+  border-radius: 3%;
+}
+
+.f-card-2:hover .card-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.f-card-2:hover .card-back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.f-card-3 {
+  border-radius: 3%;
+  flex-direction: column-reverse;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.f-card-3 div {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.f-card-3 .card-front {
+  background-color: #83e0e4;
+  transform: perspective(500px) rotateY(0deg);
+  border-radius: 3%;
+}
+
+.f-card-3 .card-back {
+  background-color: #9dca37;
+  transform: perspective(500px) rotateY(180deg);
+  border-radius: 3%;
+}
+
+.f-card-3:hover .card-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.f-card-3:hover .card-back {
+  transform: perspective(500px) rotateY(360deg);
 }
 
 .servicios-secundarios {
@@ -804,6 +985,7 @@ nav .nav-list {
   text-align: center;
   overflow: hidden;
   position: relative;
+  border-radius: 10%;
 }
 
 .our-team .picture {
@@ -1415,6 +1597,17 @@ h2 {
 
   .pie-de-pagina .grupo-1 {
     gap: 0;
+  }
+
+  .container-principal .container-titulo-boton-hero .titulo-header {
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0 15px 0 15px;
+    text-align: center;
   }
 }
 
