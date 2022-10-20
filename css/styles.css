@@ -7,7 +7,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
 
-/* ?INNDEX.HTML*/
+/* !IMAGENES Y TEXTO SERAN REEMPLAZADOS POR REALES EN PROXIMA ENTREGA*/
+
+/* ?INNDEX.HTML - RESPONSIVE (MEDIA QUERY - DESKTOP FIRST)*/
+/* ?GALERIA.HTML - RESPONSIVE (MEDIA QUERY - MOBILE FIRST)*/
+/* ?MESAS.HTML  - RESPONSIVES (SIN MEDIA QUERY - SOLO CON GRIDS)*/
+
+/* !CONTACTANOS - NO RESPONSIVE (DESKTOP)*/
+/* !CONTACTANOS - NO RESPONSIVE (DESKTOP)*/
+
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +27,9 @@
   outline: none;
 }
 
+/* ?INNDEX.HTML*/
+
+/* *Estructuracion del BODY del index */
 .grid-index {
   display: grid;
   grid-template-rows: 75px 95vh 150vh 250px;
@@ -111,6 +122,8 @@ input:checked ~ nav .nav-list .navbar-toggler {
   margin-top: 35px;
 }
 
+/* *Animacion menu hamburguesa (Puro HTML y CSS)*/
+
 input:checked ~ nav .nav-list .navbar-toggler:first-child {
   position: absolute;
   transform: rotate(45deg);
@@ -131,6 +144,8 @@ header a img {
 
 /* !MAIN INDEX- PARTE-PRINCIPAL*/
 
+/* *Estructuracion del Main del index */
+
 .main-index {
   display: grid;
   grid-template-rows: 95vh 50vh 100vh;
@@ -139,6 +154,7 @@ header a img {
   background-color: #e0e5e9;
 }
 
+/* *Container principal = Hero */
 .container-principal {
   grid-row: 1/2;
   /* background-color: aliceblue; */
@@ -212,6 +228,8 @@ button:active {
 }
 
 /* !MAIN INDEX- PARTE-SECUNDARIA*/
+
+/* *Container principal = 3 ITEMS CON ANIMACION */
 
 .container-secundario {
   grid-row: 2/3;
@@ -397,7 +415,7 @@ button:active {
   justify-content: center;
 }
 
-/**/
+/* *3 imagenes grandes con animacion HOVER */
 
 .container {
   display: flex;
@@ -433,6 +451,8 @@ button:active {
   color: #efefef;
 }
 
+/**A definir colocarle texto con informacion o no por lo que se agredece una sugerencia*/
+
 .box:hover {
   flex: 1 1 50%;
 }
@@ -446,6 +466,8 @@ button:active {
 }
 
 /* !Footer*/
+
+/* *Estructuracion del FOOTER*/
 
 .pie-de-pagina {
   width: 100%;
@@ -605,6 +627,9 @@ button:active {
 }
 
 /* ?GALERIA.HTML*/
+
+/* *Estructuracion del BODY de la GALERIA */
+
 .body-galeria {
   display: grid;
   grid-template-rows: 75px auto;
@@ -615,6 +640,8 @@ button:active {
   height: 65px;
   z-index: 1000;
 }
+
+/* *Estructuracion del MAIN de la GALERIA */
 
 .main-galeria {
   grid-row: 2/3;
@@ -637,20 +664,6 @@ button:active {
   position: relative;
   border: solid 0.15rem #2a3539;
   z-index: 5;
-}
-
-.titulo-galeria {
-  position: absolute;
-  bottom: 0;
-  color: #efefef;
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-  background: linear-gradient(rgba(255, 255, 255, 0), #9dca37);
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
 }
 
 .container-galeria .item-galeria-1 {
@@ -711,6 +724,8 @@ nav .nav-list {
 
 /* ?SERVICIOS.HTML*/
 
+/* *Estructuracion del BODY de SERVICIOS */
+
 .grid-servicios {
   display: grid;
   grid-template-rows: 75px calc(200vh - 75px);
@@ -720,6 +735,8 @@ nav .nav-list {
 .header-servicios {
   grid-row: 1/2;
 }
+
+/* *Estructuracion del MAIN de SERVICIOS */
 
 .main-servicios {
   grid-row: 2/3;
@@ -745,6 +762,8 @@ nav .nav-list {
   padding: 25px;
   color: #425156;
 }
+
+/* *ANIMACION FLIP CARD */
 
 .f-card h1 {
   display: flex;
@@ -943,7 +962,10 @@ nav .nav-list {
   font-size: 2rem;
   font-weight: 600;
 }
+
 /* ?CONTACTANOS.HTML*/
+
+/* *Estructuracion del BODY dEL CONTACTANOS */
 
 .grid-contactanos-html {
   display: grid;
@@ -954,6 +976,8 @@ nav .nav-list {
 .header-contactanos {
   grid-row: 1/2;
 }
+
+/* *Estructuracion del MAIN dEL CONTACTANOS */
 
 .main-contactanos {
   grid-row: 2/3;
@@ -975,8 +999,6 @@ nav .nav-list {
   display: flex;
   padding: 4% 2%;
   box-sizing: border-box;
-}
-.container-1 {
 }
 
 .our-team {
