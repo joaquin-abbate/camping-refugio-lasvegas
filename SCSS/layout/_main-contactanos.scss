@@ -1,0 +1,134 @@
+/* ?Main-Contactanos*/
+
+.cartas-encargadas {
+  grid-row: 1/2;
+  @include grid(repeat(auto-fit, minmax(354px, 1fr)), auto);
+  background-color: $color_secundario;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.container-c {
+  @include props-flex(row, space-around, center);
+  justify-items: center;
+  padding: 4% 2%;
+  box-sizing: border-box;
+}
+
+.our-team {
+  padding: 45px 100px 100px;
+  background-color: $color_fondo;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10%;
+  .picture {
+    display: inline-block;
+    @include medidas(130px, 130px);
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  .title {
+    display: block;
+    font-size: 15px;
+    color: $color_principal;
+    text-transform: capitalize;
+  }
+  .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $color_principal;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    li a {
+      @include props-flex(row, center, center);
+      font-size: 17px;
+      color: $color_letras;
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+    }
+  }
+}
+
+/* *Animacion Hover sobre las cards */
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: $color_principal;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  @include medidas(100%, 100%);
+  border-radius: 50%;
+  background-color: $color_principal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px $color_secundario;
+  transform: scale(0.7);
+}
+
+.our-team:hover .social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 15px;
+  bottom: 0;
+}
+
+.our-team .social li a:hover {
+  color: $color_secundario;
+  background-color: #425156;
+}
+
+/*Aca ira una imagen con informacion y la idea es un mapa al estilo de
+      cuando envias una direccion por wpp*/
+
+// .contactanos-entrada {
+//   @include grid(repeat(2, 1fr), none);
+//   width: 100%;
+//   height: 100%;
+//   div {
+//     @include props-flex(row, center, center);
+//   }
+//   .entrada {
+//     max-width: 360px;
+//     border-radius: 10px;
+//     grid-column: 1/2;
+//   }
+//   .mapa {
+//     max-width: 360px;
+//     border-radius: 10px;
+//     grid-column: 2/3;
+//   }
+// }

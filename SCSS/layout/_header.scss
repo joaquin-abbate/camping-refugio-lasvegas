@@ -1,0 +1,94 @@
+/* !HEADER - BARRA_NAVEGACIÓN*/
+
+header {
+  grid-row: 1/2;
+  a img {
+    @include medidas(55px, 55px);
+  }
+}
+
+nav {
+  @include props-flex(row, space-between, center);
+  @include medidas(75px, 100%);
+  padding: 0 12.5%;
+  line-height: 75px;
+  background-color: $color_principal;
+  position: fixed;
+  z-index: 10;
+  .navbar-brand {
+    @include props-flex(row, center, center);
+  }
+}
+
+.logo-nav {
+  @include medidas(60px, 60px);
+}
+
+.nav-list {
+  display: flex;
+  .nav-item {
+    height: 100%;
+    padding: 0 30px;
+    transition: 0.4s;
+    color: white;
+
+    &:hover {
+      background-color: $color_secundario;
+    }
+  }
+  .nav-item-active {
+    background-color: $color_secundario;
+    height: 100%;
+    padding: 0 30px;
+    transition: 0.4s;
+    color: $color_letras;
+  }
+
+  .nav-link {
+    color: $color_letras;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
+
+nav .navbar-toggler {
+  /* display: none; */
+  height: min-content;
+  margin: 18px -10px 0 0;
+  cursor: pointer;
+  .bar {
+    @include medidas(5px, 40px);
+    margin-bottom: 10px;
+    background-color: $color_letras;
+    border-radius: 10%;
+    transition: 0.4s;
+  }
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ nav .nav-list {
+  transform: translateY(0);
+}
+
+input:checked ~ nav .nav-list .navbar-toggler {
+  margin-top: 35px;
+}
+
+/* *Animacion menu hamburguesa (Puro HTML y CSS)*/
+
+input:checked ~ nav .nav-list .navbar-toggler:first-child {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+input:checked ~ nav .nav-list .navbar-toggler:nth-child(2) {
+  display: none;
+}
+
+input:checked ~ nav .nav-list .navbar-toggler:nth-child(3) {
+  transform: rotate(-45deg);
+}

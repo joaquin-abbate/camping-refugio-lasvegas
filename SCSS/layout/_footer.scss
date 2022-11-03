@@ -1,0 +1,121 @@
+/* !Footer*/
+
+.pie-de-pagina {
+  @include medidas(100%, 100%);
+  background-color: $color_principal;
+  grid-row: 4/5;
+}
+
+.grupo-1 {
+  @include medidas(100%, 100%);
+  @include grid(repeat(3, 1fr), auto);
+  margin: auto;
+  gap: 25px;
+
+  h2 {
+    color: $color_letras;
+    font-size: 20px;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 10px;
+    color: $color_letras;
+    height: 65%;
+    text-align: center;
+  }
+
+  .box-1 figure {
+    @include medidas(100%, 100%);
+    @include props-flex(row, center, center);
+    img {
+      display: flex;
+      margin-top: 12.2px;
+      @include medidas(200px, 200px);
+    }
+  }
+  .box-2 {
+    @include props-flex(column, space-around, center);
+    margin-top: 25px;
+    padding: 20px;
+  }
+  .box-3 {
+    @include props-flex(column, center, center);
+    margin-top: 25px;
+    padding: 20px;
+  }
+}
+
+.red-social {
+  display: grid;
+  @include medidas(75px, 130px);
+  @include grid(repeat(3, 1fr), auto);
+  background-color: $color_principal;
+  justify-items: center;
+  align-items: center;
+
+  .ig {
+    @include medidas(32px, 32px);
+    @include props-flex(row, center, center);
+
+    i {
+      @include medidas(100%, 100%);
+      @include props-flex(row, center, center);
+      color: $color_letras;
+    }
+    i:hover {
+      color: #dd2e76;
+    }
+  }
+  .fb {
+    @include medidas(32px, 32px);
+    @include props-flex(row, center, center);
+
+    i {
+      @include medidas(100%, 100%);
+      @include props-flex(row, center, center);
+      color: $color_letras;
+    }
+    i:hover {
+      color: rgb(66, 91, 167);
+    }
+  }
+  .wp {
+    @include medidas(32px, 32px);
+    @include props-flex(row, center, center);
+    i {
+      @include medidas(32px, 32px);
+      @include props-flex(row, center, center);
+      color: $color_letras;
+    }
+    i:hover {
+      color: rgb(3, 193, 0);
+    }
+  }
+}
+
+/*Parte infeior del footer (Copyright)*/
+.grupo-2 {
+  background-color: $color_princ_oscuro;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: $color_letras;
+  grid-column: 1/4;
+  width: 100%;
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+  font-size: 32px;
+}
+
+.fa-facebook-square:before,
+.fa-square-facebook:before {
+  content: "\f082";
+  font-size: 32px;
+}
+
+.fa-whatsapp:before {
+  content: "\f232";
+  font-size: 32px;
+}

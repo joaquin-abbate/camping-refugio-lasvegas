@@ -1,0 +1,66 @@
+/* ?Main-Galeria*/
+
+.container-galeria {
+  @include grid(1fr, auto);
+  gap: 10px;
+  margin: 20px;
+  .imag-galery {
+    @include medidas(100%, 100%);
+    object-fit: cover;
+    position: relative;
+    border: solid 0.15rem $color_princ_oscuro;
+    z-index: 5;
+  }
+
+  .item-galeria-1 {
+    position: relative;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .item-galeria-2 {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+  }
+  .item-galeria-3 {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+  }
+  .item-galeria-4 {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+  }
+  .item-galeria-5 {
+    position: relative;
+    height: auto;
+    align-items: center;
+  }
+  .item-galeria-6 {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+  }
+  .item-galeria-7 {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+  }
+  .item-galeria-8 {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+  }
+  .item-galeria-9 {
+    position: relative;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+nav .nav-list {
+  z-index: 10;
+}

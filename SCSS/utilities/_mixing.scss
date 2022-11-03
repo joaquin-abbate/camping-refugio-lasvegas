@@ -1,0 +1,45 @@
+@mixin props-flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+@mixin asignacion-grid($g-column, $g-column-e, $g-row, $g-row-e) {
+  grid-column-start: $g-column;
+  grid-column-end: $g-column-e;
+  grid-row-start: $g-row;
+  grid-row-end: $g-row-e;
+}
+/*REVISAR DESDE headera servicios*/
+
+@mixin medidas($altura, $ancho) {
+  height: $altura;
+  width: $ancho;
+}
+
+@mixin texto($list-style, $text-align, $text-decoration, $transform) {
+  list-style: $list-style;
+  text-align: $text-align;
+  text-decoration: $text-decoration;
+  text-transform: $transform;
+}
+
+@mixin background($position, $repeat, $size) {
+  background-position: $position;
+  background-repeat: $repeat;
+  background-size: $size;
+}
+
+@mixin border($border, $radius) {
+  border: $border;
+  border-radius: $radius;
+}
+
+/*font*/

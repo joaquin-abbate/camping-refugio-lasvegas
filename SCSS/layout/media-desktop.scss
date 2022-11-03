@@ -1,0 +1,250 @@
+/* !MediaQueries*/
+
+/**CONTAINER MEDIAQUERY INDEX*/ /* ?DESKTOP FIRST*/
+
+@media (max-width: 975px) {
+  nav {
+    padding: 0 2rem;
+    width: 100%;
+    .nav-list {
+      margin-right: 20px;
+      .nav-item {
+        padding: 0 20px;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main-index {
+    display: grid;
+    grid-template-rows: 95vh 75vh 125vh;
+  }
+
+  .grid-index {
+    display: grid;
+    grid-template-rows: 75px 95vh 175vh 250px;
+  }
+
+  .main-servicios {
+    display: grid;
+    grid-template-rows: calc(150vh - 75px) 120vh;
+    .info-sobre-servicios {
+      @include grid(1fr, auto);
+    }
+  }
+
+  .servicios-secundarios {
+    @include grid(1fr, 60vh 60vh);
+    .container-serv-sec {
+      @include asignacion-grid(1, 2, 1, 2);
+    }
+    .container-img-serv {
+      @include asignacion-grid(1, 2, 2, 3);
+      padding: 10px;
+    }
+  }
+
+  nav .nav-list {
+    display: grid;
+    position: absolute;
+    background-color: $color_principal;
+    width: 100%;
+    top: 75px;
+    left: 0;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: 0.6s;
+    .nav-item {
+      padding-left: 35px;
+    }
+  }
+
+  nav .navbar-toggler {
+    display: grid;
+  }
+
+  .container-secundario {
+    display: grid;
+    height: 75vh;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    h1 {
+      display: none;
+    }
+    .item-1 {
+      @include asignacion-grid(2, 3, 1, 2);
+      @include props-flex(column, center, center);
+      padding: 5px;
+      &:hover {
+        transform: scale(1);
+      }
+      i {
+        padding: 0 2rem;
+      }
+    }
+    .item-2 {
+      @include asignacion-grid(2, 3, 2, 3);
+      @include props-flex(column, center, center);
+      padding: 5px;
+      &:hover {
+        transform: scale(1);
+      }
+      i {
+        padding: 0 2rem;
+      }
+    }
+    .item-3 {
+      @include asignacion-grid(2, 3, 3, 4);
+      @include props-flex(column, center, center);
+      padding: 5px;
+      &:hover {
+        transform: scale(1);
+      }
+      i {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  .container-c .container-3 {
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 608px) {
+  .container {
+    @include grid(none, repeat(3, 1fr));
+    gap: 15px;
+  }
+
+  .container-secundario {
+    max-width: 608px;
+  }
+
+  .box-index-1 {
+    grid-row: 1/2;
+  }
+
+  .box-index-2 {
+    grid-row: 2/3;
+  }
+
+  .box-index-3 {
+    grid-row: 3/4;
+  }
+
+  .pie-de-pagina .grupo-1 .box-1 figure img {
+    display: flex;
+    margin-top: 12.2px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .pie-de-pagina .grupo-1 {
+    gap: 0;
+  }
+
+  .container-principal .container-titulo-boton-hero .titulo-header {
+    color: $color_letras;
+    font-size: 2.5rem;
+    @include props-flex(row, center, center);
+    text-transform: uppercase;
+    margin: 0 15px 0 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .item-1 {
+    color: $color_princ_oscuro;
+    width: 300px;
+    padding: 0 20px;
+    margin: 0;
+    transform: none;
+    &__:hover i {
+      color: #9dca37;
+      transform: none;
+    }
+    &__:hover p {
+      color: #9dca37;
+      transform: none;
+    }
+  }
+
+  .item-2 {
+    color: $color_princ_oscuro;
+    width: 300px;
+    padding: 0 20px;
+    margin: 0;
+    transform: none;
+    &__:hover i {
+      color: #e28743;
+      transform: none;
+    }
+
+    &__:hover p {
+      color: #e28743;
+      transform: none;
+    }
+  }
+
+  .item-3 {
+    color: $color_princ_oscuro;
+    width: 300px;
+    padding: 0 20px;
+    margin: 0;
+    transform: none;
+    &__:hover i {
+      color: #9933ff;
+      transform: none;
+    }
+    &__:hover p {
+      color: #9933ff;
+      transform: none;
+    }
+  }
+
+  .pie-de-pagina .grupo-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .box-1 {
+      display: none;
+    }
+    .box-2 {
+      @include asignacion-grid(1, 2, 1, 2);
+      margin: 10px 0px;
+      h2 {
+        margin: 10px;
+      }
+      .box-3 {
+        @include asignacion-grid(2, 3, 1, 2);
+        margin: 10px;
+        h2 {
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  .servicios-secundarios {
+    @include grid(1fr, 80vh 40vh);
+    .container-serv-sec {
+      @include asignacion-grid(1, 2, 1, 2);
+
+      .info-servicios-secundarios-1 {
+        @include props-flex(column, space-evenly, center);
+      }
+      .info-servicios-secundarios-2 {
+        @include props-flex(column, space-evenly, center);
+      }
+      .info-servicios-secundarios-3 {
+        @include props-flex(column, space-evenly, center);
+      }
+      .container-img-serv {
+        @include asignacion-grid(1, 2, 2, 3);
+        padding: 10px;
+      }
+    }
+  }
+}

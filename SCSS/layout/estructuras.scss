@@ -1,0 +1,94 @@
+/* *Estructuracion del BODY del index */
+.grid-index {
+  @include grid(none, 75px 95vh 150vh 250px);
+  max-width: 100%;
+}
+
+/* *Estructuracion del Main del index */
+.main-index {
+  @include grid(none, 95vh 50vh 100vh);
+  height: 100%;
+  grid-row: 2/4;
+  background-color: $color_fondo;
+}
+
+/* *Estructuracion del BODY de la GALERIA */
+
+.body-galeria {
+  @include grid(none, 75px auto);
+}
+
+.header-galeria {
+  grid-row: 1/2;
+  height: 75px;
+  z-index: 1000;
+}
+
+/* *Estructuracion del MAIN de la GALERIA */
+
+.main-galeria {
+  grid-row: 2/3;
+  @include props-flex(row, center, center);
+}
+
+/* *Estructuracion del BODY de SERVICIOS */
+.grid-servicios {
+  @include grid(none, 75px calc(150vh - 75px));
+  background-color: $color_letras;
+}
+
+.header-servicios {
+  grid-row: 1/2;
+}
+
+/* *Estructuracion del MAIN de SERVICIOS */
+
+.main-servicios {
+  grid-row: 2/3;
+  @include grid(none, 65vh 90vh);
+  margin: 25px;
+  background-color: $color_letras;
+}
+
+/* *Estructuracion del BODY dEL CONTACTANOS */
+
+.grid-contactanos-html {
+  @include grid(none, 75px 150vh);
+  background-color: $color_letras;
+}
+
+.header-contactanos {
+  grid-row: 1/2;
+}
+
+/* *Estructuracion del MAIN dEL CONTACTANOS */
+
+.main-contactanos {
+  @include grid(none, auto 40vh 50vh);
+  grid-row: 2/3;
+  margin: 25px;
+}
+
+/* *Estructuracion del BODY de MESAS */
+
+.grid-mesas-html {
+  @include grid(none, 75px auto);
+  margin-bottom: 15px;
+  align-self: center;
+  background-color: $color_letras;
+}
+
+.header-mesas {
+  grid-row: 1/2;
+}
+
+/* *Estructuracion del MAIN de MESAS */
+
+.main-mesas {
+  grid-row: 2/3;
+  @include grid(repeat(auto-fit, minmax(330px, 1fr)), minmax(330px, 330px));
+  background-color: $color_letras;
+  gap: 25px;
+  margin: 45px 45px;
+  justify-items: center;
+}

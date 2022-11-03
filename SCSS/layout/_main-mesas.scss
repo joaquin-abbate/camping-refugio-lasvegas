@@ -1,0 +1,273 @@
+/* ?*Main-Mesas*/
+
+.mesa-1 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-2 {
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  min-height: 330px;
+  background-color: $color_letras;
+}
+
+.mesa-3 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-4 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-5 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-6 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-7 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-8 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-9 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-10 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-11 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+.mesa-12 {
+  min-height: 330px;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  background-color: $color_letras;
+}
+
+/* *ANIMACION CARDS */
+
+.card {
+  position: relative;
+  @include medidas(300px, 400px);
+  margin: 0 auto;
+  background: $color_letras;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  h2 {
+    z-index: 1;
+  }
+}
+
+.card-1 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-2 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-3 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-4 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-5 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-6 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-7 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-8 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-9 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-10 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.card-11 {
+  background-image: url(../img/3706.jpg);
+}
+
+.card-12 {
+  background-image: url(../img/3706.jpg);
+  @include background(center, no-repeat, cover);
+}
+
+.face {
+  @include medidas(100%, 100%);
+  @include props-flex(row, center, center);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.desc-mesa-1 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-2 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-3 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-4 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-5 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-6 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-7 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-8 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-9 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-10 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-11 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-mesa-12 {
+  background-color: $color_letras;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.face2 {
+  transition: 0.5s;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: $color_letras;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.card:hover .face.face2 {
+  height: 60px;
+}
+h2 {
+  font-size: 2em;
+}
+
+.card:nth-child(1) .face.face2 {
+  background-image: linear-gradient(0deg, #06beb6 50%, #48b1bf 100%);
+  border-radius: 15px;
+}

@@ -1,0 +1,163 @@
+/* ?Main-Servicios*/
+
+.info-sobre-servicios {
+  grid-row: 1/2;
+  @include grid(repeat(3, 1fr), none);
+  gap: 15px;
+  i {
+    @include props-flex(row, center, center);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 25px;
+    color: $color_principal;
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+/* *ANIMACION FLIP CARD */
+
+.f-card h1 {
+  @include props-flex(column-reverse, center, center);
+  align-content: center;
+  color: aliceblue;
+}
+
+.f-card-1 {
+  border-radius: 3%;
+  flex-direction: column-reverse;
+  position: relative;
+  backface-visibility: hidden;
+  div {
+    @include props-flex(none, center, center);
+    @include medidas(100%, 100%);
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1.5s;
+  }
+  .card-front {
+    background-color: #83e0e4;
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 3%;
+  }
+  .card-back {
+    background-color: #9dca37;
+    transform: perspective(500px) rotateY(180deg);
+    border-radius: 3%;
+  }
+  &:hover .card-front {
+    transform: perspective(500px) rotateY(180deg);
+  }
+  &:hover .card-back {
+    transform: perspective(500px) rotateY(360deg);
+  }
+}
+
+.f-card-2 {
+  border-radius: 3%;
+  flex-direction: column-reverse;
+  position: relative;
+  backface-visibility: hidden;
+  div {
+    @include props-flex(none, center, center);
+    @include medidas(100%, 100%);
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1.5s;
+  }
+  .card-front {
+    background-color: $color_secundario;
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 3%;
+  }
+  .card-back {
+    background-color: $color_cards_mesas;
+    transform: perspective(500px) rotateY(180deg);
+    border-radius: 3%;
+  }
+  &:hover .card-front {
+    transform: perspective(500px) rotateY(180deg);
+  }
+
+  &:hover .card-back {
+    transform: perspective(500px) rotateY(360deg);
+  }
+}
+
+.f-card-3 {
+  border-radius: 3%;
+  flex-direction: column-reverse;
+  position: relative;
+  backface-visibility: hidden;
+  div {
+    @include props-flex(none, center, center);
+    @include medidas(100%, 100%);
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1.5s;
+  }
+  .card-front {
+    background-color: $color_secundario;
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 3%;
+  }
+  .card-back {
+    background-color: $color_cards_mesas;
+    transform: perspective(500px) rotateY(180deg);
+    border-radius: 3%;
+  }
+  &:hover .card-front {
+    transform: perspective(500px) rotateY(180deg);
+  }
+
+  &:hover .card-back {
+    transform: perspective(500px) rotateY(360deg);
+  }
+}
+
+.servicios-secundarios {
+  @include grid(1fr 2fr, none);
+  background-color: $color_letras;
+  grid-row: 2/3;
+  gap: 15px;
+  i {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.container-img-serv {
+  grid-column: 2/3;
+  @include props-flex(row, center, center);
+  @include medidas(100%, 100%);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+  img {
+    @include props-flex(row, center, center);
+    @include medidas(100%, 100%);
+    object-fit: cover;
+    border: 5px solid black;
+  }
+}
+
+.container-serv-sec {
+  grid-column: 1/2;
+  @include grid(1fr, repeat(3, 1fr));
+  width: 100%;
+  .info-servicios-secundarios-1 {
+    grid-row: 1/2;
+    @include props-flex(row, space-evenly, center);
+    width: 100%;
+  }
+  .info-servicios-secundarios-2 {
+    grid-row: 2/3;
+    @include props-flex(row, space-evenly, center);
+    width: 100%;
+  }
+  .info-servicios-secundarios-3 {
+    grid-row: 3/4;
+    @include props-flex(row, space-evenly, center);
+    width: 100%;
+  }
+}

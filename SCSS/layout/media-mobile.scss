@@ -1,0 +1,212 @@
+/**CONTAINER MEDIAQUERY GALERIA*/ /* ?MOBILE FIRST*/
+
+@media (min-width: 768px) {
+  .nav-link {
+    z-index: 100;
+  }
+
+  .navbar-toggler {
+    z-index: 1000;
+  }
+  .container-galeria {
+    transition: all 0.5s;
+  }
+
+  .main-index {
+    display: grid;
+    height: 100%;
+    grid-row: 2/4;
+    background-color: $color_principal;
+  }
+
+  .titulo-galeria {
+    z-index: 1;
+  }
+
+  .container-galeria {
+    @include grid(1fr 1fr, auto (minmax(1fr 1fr)));
+    gap: 10px;
+    margin: 20px;
+    width: 100%;
+  }
+
+  .container-galeria .item-galeria-1 {
+    grid-column: 1/3;
+    max-width: 1000px;
+    position: relative;
+    min-height: 250px;
+  }
+
+  .container-galeria .item-galeria-2 {
+    @include asignacion-grid(1, 2, 2, 5);
+    height: 100%;
+    max-width: 768px;
+    position: relative;
+    object-fit: cover;
+    min-height: 250px;
+  }
+
+  .container-galeria .item-galeria-3 {
+    max-width: 768px;
+    max-height: 350px;
+    position: relative;
+    min-height: 250px;
+  }
+
+  .container-galeria .item-galeria-4 {
+    max-width: 768px;
+    max-height: 350px;
+    position: relative;
+    min-height: 250px;
+  }
+
+  .container-galeria .item-galeria-5 {
+    @include asignacion-grid(2, 3, 2, 4);
+    max-width: 768px;
+    max-height: 350px;
+    position: relative;
+    min-height: 250px;
+  }
+
+  .container-galeria .item-galeria-6 {
+    max-width: 768px;
+    max-height: 350px;
+    position: relative;
+    min-height: 250px;
+  }
+
+  .container-galeria .item-galeria-7 {
+    @include asignacion-grid(2, 3, 5, 8);
+    max-width: 768px;
+    position: relative;
+    min-height: 250px;
+  }
+
+  .container-galeria .item-galeria-8 {
+    max-width: 768px;
+    max-height: 350px;
+    position: relative;
+    min-height: 250px;
+  }
+  .container-galeria .item-galeria-9 {
+    grid-column: 1/3;
+    max-height: 350px;
+    position: relative;
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    z-index: 100;
+  }
+
+  .navbar-toggler {
+    z-index: 1000;
+  }
+  .container-galeria {
+    transition: all 0.5s;
+  }
+
+  .main-index {
+    display: grid;
+    height: 100%;
+    grid-row: 2/4;
+    background-color: #e0e5e9;
+  }
+
+  .titulo-galeria {
+    z-index: 1;
+  }
+
+  .container-galeria {
+    transition: all 0.5s;
+  }
+
+  .container-galeria {
+    @include grid(repeat(3, 1fr), repeat(5, 300px));
+    margin: 50px 100px;
+    gap: 15px;
+  }
+
+  .container-galeria .item-galeria-1 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    @include asignacion-grid(1, 4, 1, 2);
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-2 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    @include asignacion-grid(1, 2, 2, 4);
+
+    min-height: 275px;
+    min-height: 300px;
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-3 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    @include asignacion-grid(2, 4, 2, 4);
+    max-height: 300px;
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-4 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    @include asignacion-grid(2, 3, 3, 4);
+    min-height: 275px;
+    min-height: 300px;
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-5 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    @include asignacion-grid(3, 4, 5, 6);
+    min-height: 275px;
+    min-height: 300px;
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-6 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 275px;
+    min-height: 300px;
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-7 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    @include asignacion-grid(3, 4, 3, 5);
+    min-height: 275px;
+    min-height: 300px;
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-8 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 275px;
+    min-height: 300px;
+    max-width: 1600px;
+  }
+
+  .container-galeria .item-galeria-9 {
+    object-fit: cover;
+    @include medidas(100%, 100%);
+    @include asignacion-grid(1, 3, 5, 6);
+    min-height: 275px;
+    min-height: 300px;
+    max-width: 1600px;
+  }
+}
