@@ -35,7 +35,6 @@
   }
   .box-2 {
     @include props-flex(column, space-around, center);
-    margin-top: 25px;
     padding: 20px;
   }
   .box-3 {
@@ -63,7 +62,8 @@
       color: $color_letras;
     }
     i:hover {
-      color: #dd2e76;
+      color: $color_secundario;
+      cursor: pointer;
     }
   }
   .fb {
@@ -76,7 +76,8 @@
       color: $color_letras;
     }
     i:hover {
-      color: rgb(66, 91, 167);
+      color: $color_secundario;
+      cursor: pointer;
     }
   }
   .wp {
@@ -88,7 +89,8 @@
       color: $color_letras;
     }
     i:hover {
-      color: rgb(3, 193, 0);
+      color: $color_secundario;
+      cursor: pointer;
     }
   }
 }

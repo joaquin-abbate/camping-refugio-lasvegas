@@ -19,7 +19,12 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/71.jpg);
+    url(../img/hero-2.jpg);
+  // url(../img/71.jpg);
+  // url(../img/hero.jpg);
+  /* !Importante! Dejo comentala img que seria el hero, la cuestiones que la resolucion es baja opte por dejar dich*/
+  /* Cuando la pagina sea publicada para el cliente, se tomaran fotos nuevas en todos los apartados con una buena calidad*/
+  /* Cuando la pagina sea publicada para el cliente, se tomaran fotos nuevas en todos los apartados con una buena calidad*/
 
   @include background(center, no-repeat, cover);
 }
@@ -35,17 +40,17 @@
   }
 
   button {
-    @include border(1px solid $color_secundario, 28px);
+    @include border(1px solid $color_secundario, none);
     @include props-flex(row, center, center);
     box-shadow: 0px 0px 8px 2px $color_principal;
     background-color: transparent;
     color: $color_letras;
     width: 150px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 16px 31px;
-    margin-top: 15px;
+    padding: 15px 30px;
+    margin: 0px 5px;
     text-decoration: none;
 
     a {
@@ -60,6 +65,20 @@
   button:active {
     position: relative;
     top: 1px;
+  }
+
+  .h1-SEO {
+    max-width: 805px;
+    display: flex;
+    text-align: center;
+    padding: 25px;
+    color: aliceblue;
+    font-weight: 300;
+  }
+
+  .container-buttons {
+    display: flex;
+    padding: 20px;
   }
 }
 

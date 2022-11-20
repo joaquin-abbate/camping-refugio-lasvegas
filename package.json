@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/joaquin-abbate/camping-refugio-lasvegas#readme",
   "devDependencies": {
-    "node-sass": "^7.0.3",
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
   }
 }

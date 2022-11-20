@@ -17,10 +17,17 @@
 
 /* *ANIMACION FLIP CARD */
 
-.f-card h1 {
-  @include props-flex(column-reverse, center, center);
-  align-content: center;
-  color: aliceblue;
+.f-card {
+  h1 {
+    @include props-flex(column-reverse, center, center);
+    align-content: center;
+    color: aliceblue;
+  }
+
+  .h1-cards {
+    padding: 15px;
+    font-weight: 300;
+  }
 }
 
 .f-card-1 {
@@ -137,7 +144,11 @@
     @include props-flex(row, center, center);
     @include medidas(100%, 100%);
     object-fit: cover;
-    border: 5px solid black;
+    box-shadow: 1px 4px 16px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 4px 16px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 4px 16px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+    max-height: 600px;
   }
 }
 
@@ -147,17 +158,23 @@
   width: 100%;
   .info-servicios-secundarios-1 {
     grid-row: 1/2;
-    @include props-flex(row, space-evenly, center);
+    @include props-flex(column, space-evenly, center);
     width: 100%;
+    text-align: center;
   }
   .info-servicios-secundarios-2 {
     grid-row: 2/3;
-    @include props-flex(row, space-evenly, center);
+    @include props-flex(column, space-evenly, center);
     width: 100%;
+    text-align: center;
   }
   .info-servicios-secundarios-3 {
     grid-row: 3/4;
-    @include props-flex(row, space-evenly, center);
+    @include props-flex(column, space-evenly, center);
     width: 100%;
+    text-align: center;
   }
+}
+p {
+  max-width: 330px;
 }

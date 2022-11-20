@@ -8,55 +8,86 @@
     @include medidas(100%, 100%);
     object-fit: cover;
     position: relative;
-    border: solid 0.15rem $color_princ_oscuro;
+    box-shadow: 1px 4px 16px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 4px 16px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 4px 16px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
     z-index: 5;
   }
 
   .item-galeria-1 {
     position: relative;
-    height: auto;
+    height: 350px;
     width: 100%;
     object-fit: cover;
   }
 
   .item-galeria-2 {
     position: relative;
-    height: auto;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
   }
   .item-galeria-3 {
     position: relative;
-    height: auto;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
   }
   .item-galeria-4 {
     position: relative;
-    height: auto;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
   }
   .item-galeria-5 {
     position: relative;
-    height: auto;
-    align-items: center;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
   }
   .item-galeria-6 {
     position: relative;
-    height: auto;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
   }
   .item-galeria-7 {
     position: relative;
-    height: auto;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
   }
   .item-galeria-8 {
     position: relative;
-    height: auto;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
   }
   .item-galeria-9 {
     position: relative;
-    height: auto;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .item-galeria-10 {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .item-galeria-11 {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .item-galeria-12 {
+    position: relative;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
   }
 }
